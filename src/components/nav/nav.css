@@ -1,0 +1,6 @@
+.navbar {
+    background-image: url('file:///C:/Users/hp15-AY/Desktop/ReactFolders/tech_store/public/images/nav.png');
+    max-width: 100%;
+    background-size: contain;
+    height: 12rem;
+}

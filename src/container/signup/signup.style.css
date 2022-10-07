@@ -1,0 +1,16 @@
+.title, .field {
+    position: relative;
+    transition: .3s ease-in-out;
+}
+ .field:focus-within {
+    border: #f6921e;
+    border-left: 8px solid #f6921e !important;
+  } 
+  .title::before {
+    content: "";
+    width: 5px;
+    height: 45px;
+    background-color: #f6921e;
+    position: absolute;
+    left: -10px;
+  }
