@@ -20,7 +20,6 @@ const LoginPage = () => {
   });
   const onSubmit = async (values) => {
     dispatch(signupRequest());
-    console.log('clicked')
     await axios.post('https://omar-tech-store.herokuapp.com/api/users/signup',
     {
         email: values.email,
@@ -29,7 +28,6 @@ const LoginPage = () => {
     })
     .then((details) => {
       const {data} = details;
-      console.log(data);
       dispatch(successSignup(data))
       localStorage.setItem('token', data.token);
       navigate('/')
@@ -49,7 +47,6 @@ const LoginPage = () => {
     validationSchema: validationSchema,
   });
   
-  console.log(formik.errors)
   return (
     <div className='w-[80%] m-auto flex bg-gray-100 h-[100vh] overflow-y-hidden max-h-[100vh]'>
       <div className='w-[37%] p-[3rem] flex justify-center items-start  bg-gradient-to-b from-orange-500 via-orange-600 to-orange-700 h-[100vh]'>

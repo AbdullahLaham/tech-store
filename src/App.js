@@ -12,7 +12,6 @@ import PaymentPage from './container/PaymentPage';
 import CartPage from './container/CartPage';
 import Search from './container/Search';
 import ProductsPage from './container/ProductsPage';
-import Admin from './container/AdminPage/Admin'
 // import './App.css';
 
 function App() {
@@ -20,15 +19,14 @@ function App() {
     <div className="App">
         <Routes>
           <Route path='/' element={<MainPage />} />
-          <Route path='/products/:category' element={<ProductsPage />} /> 
+          {/* <Route path='/products/:category' element={<ProductsPage />} /> 
           <Route path='/login' element={<LoginPage />} />
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/profile' element={<ProfilePage />} />
           <Route path='/product/:id' element={<ProductDetails />} />
           <Route path='/payment' element={<PaymentPage />} />
           <Route path='/cart' element={<CartPage />} />
-          <Route path='/search' element={<Search />} />
-          <Route path='/admin' element={<Admin />} />
+          <Route path='/search' element={<Search />} /> */}
         </Routes>
     </div>
   );

@@ -7,6 +7,7 @@ import Checkbox from '../components/Checkbox'
 import { useSelector, useDispatch } from 'react-redux'
 import {addToCart} from '../redux/cart/cartActions'
 const ProductDetails = () => {
+    
     const profile = useSelector((state) => state.login.data);
     const token = localStorage.getItem('token') ? localStorage.getItem('token') : '';
     const {id} = useParams();

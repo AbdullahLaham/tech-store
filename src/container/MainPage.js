@@ -13,27 +13,28 @@ const MainPage = () => {
   const navigate = useNavigate();
   const [offer, setProductOffer] = useState({});
   useEffect(() => {
-    const token = localStorage.getItem('token')
-    if (!token) {
-      navigate('/login');
-    }
-    const fetchData = async () => {
-      await axios.get('https://omar-tech-store.herokuapp.com/api/products/offers')
-      .then((data) => {
-        setProductOffer(data)
-      }).catch((err) => {
-        console.log(err);
-      })
-    }
-    fetchData();
+    // const token = localStorage.getItem('token')
+    // if (!token) {
+    //   navigate('/login');
+    // }
+    
+    // const fetchData = async () => {
+    //   await axios.get('https://omar-tech-store.herokuapp.com/api/products/offers')
+    //   .then((data) => {
+    //     setProductOffer(data)
+    //   }).catch((err) => {
+    //     console.log(err);
+    //   })
+    // }
+    // fetchData();
   
   }, [])
   return (
-    <div>
+    <div className=''>
       <Header />  
-      <div className='bg-main-img w-[100%] block h-[100vh] bg-no-repeat bg-cover relative z-0'>
+      <div className=' w-[100%] block h-[100vh] bg-[url("../images/main.png")] bg-no-repeat bg-cover relative z-0'>
           <div className='w-[100%] flex ' >
-            <div className='w-[100%] flex-col mt-[15rem] flex items-start text-white ml-[7rem]  ' >
+            <div className='w-[100%] flex-col mt-[15rem] flex items-start text-white ml-[7rem] '>
               <h2 className='text-5xl mb-[.9rem]'>PLAYSTATION 5</h2>
               <p className='mt-[1rem] '> ligtning-fast download-speed with super fast ssd storage</p>
               <button className='flex p-[.5rem] items-center jus mt-[3.5rem] text-[#000] bg-white rounded-md hover:gap-3 transition delay-150 duration-300 ease-in-out;

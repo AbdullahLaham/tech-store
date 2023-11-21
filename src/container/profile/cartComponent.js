@@ -10,4 +10,4 @@ const CartComp = () => {
   )
 }
 
-export default CartComp
+export default CartComp;

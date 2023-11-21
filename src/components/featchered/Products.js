@@ -14,6 +14,7 @@ const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
       const {data} = await axios.get('https://omar-tech-store.herokuapp.com/api/products/featured-products');
+      console.log('products', data);
       setProducts(data);
     }
     fetchData();
